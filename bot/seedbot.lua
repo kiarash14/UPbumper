@@ -225,11 +225,12 @@ function create_config( )
     "all",
     "leave_ban",
     "admin"
+    "config" 
     },
     sudo_users = {100096055,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Telebumper v1
+    about_text = [[Telebumper v2.6
     
 http://s7.picofile.com/file/8234722668/Bumper
 
