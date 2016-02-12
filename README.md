@@ -1,8 +1,4 @@
-# [TeleSeed](https://telegram.me/TeleSeed) 
-
-[![Join the chat at https://gitter.im/SEEDTEAM/TeleSeed](https://badges.gitter.im/SEEDTEAM/TeleSeed.svg)](https://gitter.im/SEEDTEAM/TeleSeed?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-**An advance and powerful Administration bot based on [yagop/telegram-bot](https://github.com/yagop/telegram-bot) licensed under [GNU General public License](https://github.com/SEEDTEAM/TeleSeed/blob/master/LICENSE)**
+# [TeleBumper](https://telegram.me/telebumper) 
 # Features
 
 * **A powerful Anti spam with custom sensitivity For each group**
@@ -21,9 +17,7 @@
 * **And ...**
 
 **Table of Contents** 
-- [TeleSeed](#teleseed)
-- [Features](#features)
-- [Commands](#commands)
+- [TeleBumper](#teleBumper)
 	- [Admins commands](#admins-commands)
 		- [Realm creation](#realm-creation)
 		- [Group creation](#group-creation)
@@ -90,140 +84,140 @@
 ## Admins commands
 **Only admins and sudo users can run these commands**
 ### Group creation
->[!/]creategroup [group name]
+>cg [group name]
 >
->>[!/]creategroup SEED
+>>cg Bumper
 >>>will create a group
 >>>
 >>>_Only works in realms for admins but, sudo users can use it everywhere_
 
 ### Realm creation
->[!/]createrealm [realm name]
+>cr [realm name]
 >
->>[!/]createrealm SEED
+>>cr Bumper
 >>>will create a realm
 >>>
 >>>_Only works in realms for admins but, sudo users can use it everywhere_
 
 ###Add or remove realms
->[!/]add realm
+>add realm
 >>This command will add that group
 >
->[!/]rem realm
+>rem realm
 >>This command will remove that group
 
 
 ###Add or remove groups
->[!/]add
+>add
 >>This command will add that group
 >
->[!/]rem
+>rem
 >>This command will remove that group
 
 ###Leaving
->[!/]leave
+>leave
 >>Bot will leave that group
 
 ###Everything about groups
->[!/]all
+>all
 >>This command will return everything about that group
 >
->[!/]all [group_id]
+>all [group_id]
 >>_Only onwer,admin and sudo users can use this command
 
 
 ### Setting description in realm
-> [!/]setabout [Group_id] [text]
->>[!/]setabout 123456789 about
+> sa [Group_id] [text]
+>>sa 123456789 about
 >>>This command will set [text] as description of [Group_id]
 
 
 ### Setting group name in realm 
-> [!/]setname [Group_id] [text]
->>[!/]setname 123456789 SEED
+> sn [Group_id] [text]
+>>sn 123456789 Bumper
 >>>This command will set [text] as name of [Group_id]
 
 ### Setting rules in realm
-> [!/]setrules [Group_id] [text]
->>[!/]setrules 123456789 rules !
+> sr [Group_id] [text]
+>>Sr 123456789 rules !
 >>>This command will set [text] as rules of [Group_id]
 
 
-### Lock groups name|flood|photo|member in realm
-> [!/]lock [Group_id] [name|flood|photo|member]
->>[!/]lock 123456789 name
+### Lock groups n|flood|photo|m in realm
+> l [Group_id] [name|flood|photo|member]
+>>L 123456789 name
 >>>This command will lock name|flood|photo|member of [Group_id]
 
 
-### Unlock groups name|flood|photo|member
-> [!/]Unlock [Group_id] [name|flood|photo|member]
->>[!/]Unlock 123456789 name
+### UnlOCK groups name|flood|photo|member
+> Unl [Group_id] [n|flood|photo|m]
+>>UnL 123456789 name
 >>>This command will unlock name|flood|photo|member of [Group_id]
 
 ## Group setting in realm
->[!/]setting [Group_id]
->>[!/]setting 12345678
+>setting [Group_id]
+>>setting 12345678
 >>>This command will return settings of [Group_id]
 
 ### Add admin
->[!/]addadmin [username]
->>[!/]addadmin @username
+>ad [username]
+>>ad @username
 >>>This command will add username as admin
 >>>
 >>>_Only works in realms_
 
 ### Remove admin
->[!/]removeadmin [username]
+>rd [username]
 >
->[!/]removeadmin [username]
+>rd [username]
 >
->>[!/]removeadmin @username
+>>rd @username
 >>>This command will add username as admin
 >>>
 >>>_Only works in realms_ [username]
 
 ### Admins|group list in realm
->[!/]list [admins|groups]
->>[!/]list groups
+>[ist [admins|groups]
+>>list groups
 >>>This command will return admins|groups list
 
 ### Broadcast
->[!/]broadcast [text]
->>[!/]broadcast Hello !
+>brc [text]
+>>brc Hello !
 >>>This command will send text to all groups
 >>>
 >>>_Only sudo users can run this command_
 >
->/bc [group_id] [text]
->>/bc 123456789 Hello !
+>br [group_id] [text]
+>>br 123456789 Hello !
 >>>This command will send text to [group_id]
 
 ##Global ban commands
->[!/]banall [id]
->>[!/]banall 123456789
+>bb [id]
+>>bb 123456789
 >>>This commands will globally ban [id]
->[!/]unbanall [id]
->>[!/]unbanall 123456789
+>unbb [id]
+>>unbb 123456789
 >>>This commands will remove [id] from global bans
 >
->[!/]gbanlist
+>gblist
 >>This command will return global bans ids
 >
->[!/]banlist [group_id]
->>[!/]banlist 123456789
+>blist [group_id]
+>>blist 123456789
 >>>This command will return banned user Of [group_id]
 
 ### Set group owner
->[!/]setgpowner [group_id] [User_id]
->>[!/]setgpowner 123456789 987654321
+>sgpo [group_id] [User_id]
+>>sgpo 123456789 987654321
 >>>This command will set [User_id] as the owner of [group_id]
 
 ### Bot stats 
->[!/]stats teleseed
+>stats Bumper
 >>This command will return bot stats
 
 # Realm Help
->/[!/]help
+>help
 >>Get realm commands list
 
 
@@ -235,143 +229,143 @@ _Sudo users and admins can also use this commands in all groups_
 
 ### Hammer
 
->[!/]kick [username|id]
->>[!/]kick @useranme
->>[!/]kick 123456789
+>k [username|id]
+>>k @useranme
+>>k 123456789
 >>>This command will remove that user
 >
->[!/]ban [username|id]
->>[!/]ban @username
->>[!/]ban 123456789
+>b [username|id]
+>>b @username
+>>b 123456789
 >>>this command will ban and remove that user
 >
->[!/]unban [id]
->>[!/]unban 12345678
+>unb [id]
+>>unb 12345678
 >>>This command will unban that user
 >
->[!/]banlist
+>blist
 >>This command will return bans list
 
 ### group name|member|arabic|flood|bots lock
->[!/]lock [name|member|arabic|flood|bots]
->>[!/]lock flood
+>l [n|m|a|f|bot]
+>>lock f
 >>>This command will lock name|member|arabic|flood|bots of groups
 
 ### group name|member|arabic|flood|bots unlock
->[!/]unlock [name|member|arabic|flood|bots]
->>[!/]unlock flood
+>unl [n|m|a|f|bot]
+>>unl f
 >>>This command will unlock name|member|arabic|flood|bots of groups
 
 ### Group modlist|rules|about|member clean
->[!/]clean [modlist|rules|about|member]
->>[!/]clean modlist
+>clean [modlist|r|a|m]
+>>clean modlist
 >>>This command will clean modlist|rules|about|member
 >>>_/clean member will kick all users except owner,admins and bot and it's for owners only_
 
 ### Set groups rules|about
->[!/]set [rules|about] [text]
->>[!/]set rules don't spam!
+>s [r|a] [text]
+>>s rules don't spam!
 >>
 >>No NSFW
 >>> This command will set [text] as the rules|about of groups
 
 ### Setting or changing group owner
->[!/]setowner [id]
->>[!/]setowner 123456789
+>so [id]
+>>so 123456789
 >>>This command will set id as owner of that group
 
 ### Setting or changing group photo
->[!/]setphoto
+>sp
 >> This command will change or set group photo
 >>_also locks photo_
 
 ### Changing Group name
->[!/]setname [name]
->>[!/]setname SEED
+>sn [name]
+>>sn BUMPER
 >>>This command will set [name] as name of groups
 
 ### Group link
->[!/]newlink 
+>nl 
 >>This command will revoke group link
 >
->[!/]link
+>l
 >>This command will return group link
 
 ### Promote and demote mods
->[!/]promote [username]
->>[!/]promote @username
+>p [username]
+>>p @username
 >>>This command will promote @username as moderator
 >
->[!/]demote [username]
->>[!/]demote @username
+>d [username]
+>>d @username
 >>> This command will demote @username
 
 ### Resolve username
->[!/]res [username]
->>[!/]res @username
+>res [username]
+>>res @username
 >>>This command will return info about that username
 
 ### Flood sensitivity
->[!/]setflood [value]
->>[!/]setflood 15  
+>sf [value]
+>>sf 15  
 >>> will set flood sensitivity to [value]
 
 ### Group rules and about
->[!/]about
+>about
 >>This command will return group description
 >
->[!/]rules
+>rules
 >>This command will return group rules
 >>>_normal users can use it too_
 
 ### Group settings
->[!/]setting
+>setting
 >>This command will return group settings
 
 ### modlist
->[!/]modlist
+>modlist
 >>This command will return group moderators
 >>>_normal users can use it too_
 
 ###Help 
->[!/]help
+>help
 
 ### Owner
->[!/]owner 
+>owner 
 >>This command will return owners id
 
 ### Save and get
->[!/]save [title] [text]
->>[!/]save spam Don't spam !
+>save [title] [text]
+>>save spam Don't spam !
 >>>This command will save text as that title
 >
->[!/]get [title]
->>[!/]get spam
+>get [title]
+>>get spam
 >>>This command will return text of that title
 
 ### Id
->[!/]id
+>id
 >>This command will return user or group id
 >>_can be triggered by reply_
 >>
 >>_Normal users can use it_ 
 
 ### group stats
->[!/]stats 
+>stats 
 >>This command will return group message statistic in a .txt file
 >
->[!/]statslist
+>statslist
 >>This command will return group message statistic
 
 ### member list
->[!/]who
+>who
 >>This command will return member list in a .txt file
 >
->[!/]wholist
+>wholist
 >>This command will return member list
 
 # Group Help
->/[!/]help
+>/help
 >>Get commands list
 
 
@@ -381,52 +375,52 @@ _Sudo users and admins can also use this commands in all groups_
 **These commands only works in bots private**
 
 ### Hammer
->[!/]owners group_id [kick|ban|unban] user_id
->>[!/]owners 1234567 kick 1234567
+>owners group_id [kick|ban|unban] user_id
+>>owners 1234567 kick 1234567
 
 ### cleaning
->[!/]owners group_id clean  [modlist|rules|about]
->>[!/]owners 1234567 clean modlist
+>owners group_id clean  [modlist|rules|about]
+>>owners 1234567 clean modlist
 
 ### setting flood sensitivity
->[!/]owners group_id setflood value
->>[!/]owners 1234567 setflood 17
+>owners group_id setflood value
+>>owners 1234567 setflood 17
 
 ### lock groups member|name
->[!/]owners group_id lock [member|name]
->>[!/]owners 1234567 lock member
+>owners group_id lock [member|name]
+>>owners 1234567 lock member
 
 #### unlock groups member|name
->[!/]owner group_id unlock [member|name]
->>[!/]owners 1234567 unlock name
+>owner group_id unlock [member|name]
+>>owners 1234567 unlock name
 
 ### Group link
->[!/]owners group_id get link
->>[!/]owners 1234567 get link
+>owners group_id get link
+>>owners 1234567 get link
 >
->[!/]owners group_id new link
->>[!/]owners 1234567 new link
+>owners group_id new link
+>>owners 1234567 new link
 
 ### change name|rules|name
->[!/]changename [group_id] [name]
->>[!/]changename 123456789 SEED
+>changename [group_id] [name]
+>>changename 123456789 SEED
 >
->[!/]changrules [group_id] [rules]
->>[!/]changrules 123456789 rules !
+>changrules [group_id] [rules]
+>>changrules 123456789 rules !
 >
->/changeabout [group_id] [about]
->>/changeabout 123456789 about !
+>changeabout [group_id] [about]
+>>changeabout 123456789 about !
 
 ### Group log
->/loggroup [group_id]
->>/loggroup 123456789
+>loggroup [group_id]
+>>loggroup 123456789
 
 ### Join
->/[!/]oin [group_id]
+>join [group_id]
 >> This command will add user in [group_id]
 
 
-**U can use both "/" and "!"**
+**U cant use both "/" and "!"**
 
 # Installation 
 
@@ -438,8 +432,8 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 ```bash
 # lets install the bot
 cd $HOME
-git clone https://github.com/SEEDTEAM/TeleSeed.git
-cd TeleSeed
+git clone https://github.com/Bumper/TeleBumper.git
+cd TeleBumper
 chmod +x launch.sh
 ./launch.sh install
 ./launch.sh # Enter a phone number & confirmation code.
@@ -448,7 +442,7 @@ chmod +x launch.sh
 To install everything in one command on debian-based distros, use: (useful for VPS deployment)
 ```sh
 #https://github.com/yagop/telegram-bot/wiki/Installation
-sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/SEEDTEAM/TeleSeed.git && cd TeleSeed && chmod +x launch.sh && ./launch.sh install && ./launch.sh
+sudo apt-get update; sudo apt-get upgrade -y --force-yes; sudo apt-get dist-upgrade -y --force-yes; sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-dev libevent-dev libjansson* libpython-dev make unzip git redis-server g++ -y --force-yes && git clone https://github.com/SEEDTEAM/TeleSeed.git && cd TeleBumper && chmod +x launch.sh && ./launch.sh install && ./launch.sh
 ```
 ### Realm configuration 
 
@@ -478,31 +472,15 @@ Create a realm using !createrealm command
 Check out this tutorial by: [Telegram Geeks](http://telegramgeeks.com/2016/01/teleseed-tutorial/) for further assistance with setup and installation.
 
 Do not contact **us** In private for support.
-Join our bot development group by sending `/join 56670147` to [@TeleSeed](https://telegram.me/TeleSeed)
+Join our bot development group by sending `/join 56670147` to [@TeleSeed](https://telegram.me/TeleBumper)
 
 _If you are using /join service for first time you have to send it 11 times ( Bot is spam reported )_
 
 # Special thanks to
-[@seyedan25](https://telegram.me/seyedan25)
+[@KIARASH_GH14](https://telegram.me/kiarash_gh14)
 
-For Managing [@teleseed](https://telegram.me/TeleSeed) on Telegram
+For Managing [@teleBumper](https://telegram.me/TeleBumper) on Telegram
 
-[@Vamptacus](https://telegram.me/Vamptacus)
+# channel Bumperbot
 
-For graphic designs
-
-[@topkecleon](https://github.com/topkecleon)
-
-[@JuanPotato](https://github.com/JuanPotato)
-
-# Our team!
-
-[Alphonse](https://github.com/hmon) ([Telegram](https://telegram.me/iwals))
-
-[I M /-\ N](https://github.com/imandaneshi) ([Telegram](https://telegram.me/imandaneshi))
-
-[Siyanew](https://github.com/Siyanew) ([Telegram](https://telegram.me/Siyanew))
-
-[Rondoozle](https://github.com/Rondoozle) ([Telegram](https://telegram.me/Rondoozle))
-
-Our Telegram cahnnels > English: [@TeleSeedCH](https://telegram.me/teleseedch) Persian: [@IranSeed](https://telegram.me/iranseed)
+Our Telegram cahnnels > English: [@TeleBumperch](https://telegram.me/teleBumperch) Persian: [@teleBump](https://telegram.me/telebump)
