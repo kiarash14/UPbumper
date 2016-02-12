@@ -94,7 +94,7 @@ end
 
 local function get_link(target)
   local data = load_data(_config.moderation.data)
-  local group_link = data[tostring(target)]['settings']['set_link']
+  local group_link = data[tostring(target)]['settings']['s_li']
   if not group_link or group_link == nil then 
     return "No link"
   end
@@ -148,8 +148,8 @@ end
 
 return {
   patterns = {
-  "^[!/](all)$",
-  "^[!/](all) (%d+)$"
+  "^(all)$",
+  "^(all) (%d+)$"
   },
   run = run
 }
