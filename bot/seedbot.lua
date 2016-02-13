@@ -225,7 +225,6 @@ function create_config( )
     "all",
     "leave_ban",
     "admin"
-    "config" 
     "spam"
     "info"
     },
