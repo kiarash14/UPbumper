@@ -884,12 +884,12 @@ local function run(msg, matches)
       
       savelog(msg.to.id, "Group { "..msg.to.print_name.." }  name changed to [ "..new_name.." ] by "..name_log.." ["..msg.from.id.."]")
     end
-    if matches[1] == 'setphoto' and is_momod(msg) then
+    if matches[1] == 'sphoto' and is_momod(msg) then
       data[tostring(msg.to.id)]['settings']['s_photo'] = 'waiting'
       save_data(_config.moderation.data, data)
       return 'Please send me new group photo now'
     end
-    if matches[1] == 'promote' and not matches[2] then
+    if matches[1] == 'p' and not matches[2] then
       if not is_owner(msg) then
         return "Only the owner can prmote new moderators"
       end
@@ -1075,7 +1075,7 @@ local function run(msg, matches)
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
       return "Group link:\n"..group_link
     end
-    if matches[1] == 'setowner' and matches[2] then
+    if matches[1] == 'so' and matches[2] then
       if not is_owner(msg) then
         return "For owner only!"
       end
